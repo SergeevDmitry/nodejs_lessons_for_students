@@ -1,6 +1,12 @@
+console.log('Strating app.js');
+
 const fs = require('fs');
 const os = require('os');
+const notes = require('./notes');
 
-var user = os.userInfo();
+var res = notes.addNote(4, 50);
+console.log(res);
 
-fs.appendFileSync('greetings.txt', `Hello ${user.username}!`);
+// var user = os.userInfo();
+//
+// fs.appendFileSync('greetings.txt', `Hello ${user.username}!`);
