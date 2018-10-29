@@ -1,5 +1,14 @@
 console.log('Strating notes.js');
 
-module.exports.addNote = (a, b) => {
-  return a * b;
+var addNote = (title, body) => {
+  console.log('Adding note', title, body);
+}
+
+var getAll() = () => {
+  console.log('Getting all notes');
+}
+
+module.exports = {
+  addNote,
+  getAll
 }
