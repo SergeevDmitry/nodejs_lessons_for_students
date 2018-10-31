@@ -23,6 +23,8 @@ const geocodeAddress = (address, callback) => {
   })
 }
 
+//https://api.darksky.net/forecast/b185a96a4f76cf580aa716e484570780/37.8267,-122.4233
+
 module.exports = {
   geocodeAddress
 }
