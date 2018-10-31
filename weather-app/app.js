@@ -24,7 +24,9 @@ request({
   json: true
 }, (error, response, body) => {
   if (error) {
-    console.log(error);
+    console.log('Unable to connect to Google servers.');
+  } else if (body.status === 'ZERO_RESULTS') {
+    console.log('Unable to find that address.');
   } else {
     console.log(`Address: ${body.results[0].formatted_address}`);
     console.log(`Latitude: ${body.results[0].geometry.location.lat}`);
