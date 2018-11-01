@@ -15,6 +15,11 @@ if (command === 'add') {
   notes.addNote(argv.title, argv.body);
 } else if (command === 'list') {
   notes.getAll();
-} else {
+} else if (command === 'add') {
+  notes.addNote();
+} else if (command === 'remove') {
+  notes.getAll();
+}
+else {
   console.log('Not found');
 }
